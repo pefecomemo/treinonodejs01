@@ -1,7 +1,7 @@
 module.exports = class Individuo {
 
     constructor(nome, profissao, vida, mana, dext, atq, def) {
-        this.nomme = nome;
+        this.nome = nome;
         this.profissao = profissao;
         this.vida = vida;
         this.mana = mana;
