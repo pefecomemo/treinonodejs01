@@ -18,3 +18,5 @@ console.log(ind1.nome, ind1.somaPts());
 console.log(ind2.somaPts());
 console.log(ind3.somaPts());
 console.log(ind4.somaPts());
+
+console.log(ind1.ataque(ind2));

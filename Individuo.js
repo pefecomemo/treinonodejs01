@@ -73,5 +73,26 @@ module.exports = class Individuo {
     }
 
 
+    danoCritico(defensor) {
+        defensor = (typeof defensor !== "object") ? {} : defensor;
+        if (this.dext > defensor.dext) {
+            let dano = (this.atq + (this.atq * 0.25));
+            return dano;
+        } else {
+            let dano = this.atq;
+            return dano;
+        }
+    }
+
+    ataque(defensor) {
+        defensor = (typeof defensor !== "object") ? {} : defensor;
+
+        var dc = danoCritico();
+        let ataque = dc - defensor.def;
+        if (ataque <= 0) {
+            return "ataque ineficaz";
+        } else
+            return "ataque causou " + ataque + "pts";
+    }
 
 }
