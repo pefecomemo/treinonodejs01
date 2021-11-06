@@ -1,26 +1,26 @@
 {
-  "name": "treino-node",
-  "version": "1.0.0",
-  "description": "treino nodejs",
-  "main": "index.js",
-  "scripts": {
-    "test": "testartreino"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pefecomemo/treinonodejs01.git"
-  },
-  "keywords": [
-    "treino",
-    "nodejs"
-  ],
-  "author": "pefecoemo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pefecomemo/treinonodejs01/issues"
-  },
-  "homepage": "https://github.com/pefecomemo/treinonodejs01#readme",
-  "dependencies": {
-    "react": "^17.0.2"
-  }
+    "name": "treino-node",
+    "version": "1.0.0",
+    "description": "treino nodejs",
+    "main": "index.js",
+    "scripts": {
+        "test": "testartreino"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pefecomemo/treinonodejs01.git"
+    },
+    "keywords": [
+        "treino",
+        "nodejs"
+    ],
+    "author": "pefecomemo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pefecomemo/treinonodejs01/issues"
+    },
+    "homepage": "https://github.com/pefecomemo/treinonodejs01#readme",
+    "dependencies": {
+        "react": "^17.0.2"
+    }
 }
