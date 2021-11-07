@@ -73,26 +73,26 @@ module.exports = class Individuo {
     }
 
 
-    danoCritico(defensor) {
+
+
+    ataque(atacante, defensor) {
+        atacante = (typeof atacante !== "object") ? {} : atacante;
         defensor = (typeof defensor !== "object") ? {} : defensor;
-        if (this.dext > defensor.dext) {
-            let dano = (this.atq + (this.atq * 0.25));
-            return dano;
+
+        if (atacante.dext > defensor.dext) {
+
+            var critico = (atacante.atq + (atacante.atq * 0.25));
         } else {
-            let dano = this.atq;
-            return dano;
+
+            var critico = atacante.atq;
         }
-    }
 
-    ataque(defensor) {
-        defensor = (typeof defensor !== "object") ? {} : defensor;
+        var resultado = critico - defensor.def;
 
-        var dc = danoCritico();
-        let ataque = dc - defensor.def;
-        if (ataque <= 0) {
+        if (resultado <= 0) {
             return "ataque ineficaz";
         } else
-            return "ataque causou " + ataque + "pts";
+            return "ataque causou " + resultado + "pts";
     }
 
 }
