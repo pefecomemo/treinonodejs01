@@ -13,31 +13,31 @@ module.exports = class Individuo {
 
 
     getNome() {
-        return nome;
+        return this.nome;
     }
 
     getProfissao() {
-        return profissao;
+        return this.profissao;
     }
 
     getVida() {
-        return vida;
+        return this.vida;
     }
 
     getMana() {
-        return mana;
+        return this.mana;
     }
 
     getDext() {
-        return dext;
+        return this.dext;
     }
 
     getAtq() {
-        return atq;
+        return this.atq;
     }
 
     getDef() {
-        return def;
+        return this.def;
     }
 
     setNome(nome) {
@@ -75,7 +75,8 @@ module.exports = class Individuo {
 
 
 
-    ataque(atacante, defensor) {
+
+    atacar(atacante, defensor) {
         atacante = (typeof atacante !== "object") ? {} : atacante;
         defensor = (typeof defensor !== "object") ? {} : defensor;
 
@@ -94,5 +95,6 @@ module.exports = class Individuo {
         } else
             return "ataque causou " + resultado + "pts";
     }
+
 
 }
